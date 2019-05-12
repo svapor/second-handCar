@@ -1,5 +1,5 @@
 //先封装请求数据的函数load
-//参数多重结构 
+//参数多重解构 
 async function load(commit,{usersState:{page,pagesize,sortby,sortdirection,keyword}}) {
     // console.log(state);
 
