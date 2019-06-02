@@ -11,11 +11,17 @@
         @on-change="changePage" 
         @on-page-size-change="changePageSize"
         />
+        {{results}}
     </div>
 </template>
 
 <script>
     export default {
+        computed: {
+            results() {
+                return this.$store.state.carListState.results;
+            },
+        },
         methods: {
             changeSort(a) {
                 // console.log(a);
